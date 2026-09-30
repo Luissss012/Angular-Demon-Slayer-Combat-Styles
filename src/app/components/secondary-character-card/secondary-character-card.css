@@ -1,0 +1,44 @@
+.secondary-card {
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+.left-side {
+  width: 40%;
+  border-right: 1px solid #ccc;
+}
+
+.image-container {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.description {
+  padding: 16px;
+}
+
+.right-side {
+  width: 60%;
+  padding: 20px;
+}
+
+.right-side h3 {
+  margin-top: 0;
+}
+
+.character {
+  margin-top: 20px;
+}

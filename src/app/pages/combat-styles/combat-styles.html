@@ -1,0 +1,13 @@
+<h1>Combat Styles</h1>
+
+@for (item of combatStyleList; track item.id) {
+
+  <app-secondary-character-card
+    [data]="item">
+  </app-secondary-character-card>
+
+} @empty {
+
+  <p>No hay elementos para mostrar</p>
+
+}

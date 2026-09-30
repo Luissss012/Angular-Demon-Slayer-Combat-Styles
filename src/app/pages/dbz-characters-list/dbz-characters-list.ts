@@ -2,10 +2,11 @@ import {Component} from '@angular/core';
 import {CharacterCard} from '../../components/character-card/character-card';
 import {CharacterModel} from '../../interfaces/character-model';
 import {CharacterCardType} from '../../enums/character-card-type';
+import { PrimaryCharacterCard } from '../../components/primary-character-card/primary-character-card';
 
 @Component({
   selector: 'app-dbz-characters-list',
-  imports: [CharacterCard],
+  imports: [CharacterCard, PrimaryCharacterCard],
   templateUrl: './dbz-characters-list.html',
   styleUrl: './dbz-characters-list.css',
 })

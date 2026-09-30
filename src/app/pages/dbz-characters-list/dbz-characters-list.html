@@ -1,10 +1,14 @@
-<p>demon-slayer-characters-list works!</p>
 
+<app-primary-character-card>
+
+  <p>Progra Web v1</p>
+</app-primary-character-card>
 @for (item of getDbzCharacterList(); track item.id) {
   <app-character-card
     [data]="item"
     [type]="characterCardType.FILLED"
   >
+  <p>Progra Web v2</p>
   </app-character-card>
 
 } @empty {

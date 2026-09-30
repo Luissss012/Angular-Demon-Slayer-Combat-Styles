@@ -1,0 +1,40 @@
+<mat-card class="secondary-card">
+
+  <div class="left-side">
+
+    <div class="image-container">
+      @if (data()?.img) {
+        <img
+          [src]="data()?.img"
+          alt="{{ data()?.name }}"
+        >
+      } @else {
+        <p>Sin imagen</p>
+      }
+    </div>
+
+    <div class="description">
+      <p>{{ data()?.description }}</p>
+    </div>
+
+  </div>
+
+  <mat-card-content class="right-side">
+
+    <h3>
+      {{ data()?.id }} - {{ data()?.name }}
+    </h3>
+
+    @for (character of data()?.combat_style_character; track character.id) {
+      <div class="character">
+        <strong>
+          {{ character.id }} - {{ character.name }}
+        </strong>
+
+        <p>{{ character.description }}</p>
+      </div>
+    }
+
+  </mat-card-content>
+
+</mat-card>
